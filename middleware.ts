@@ -1,9 +1,8 @@
-import { chain } from './middlewares/chain';
-import { withMiddleware1 } from './middlewares/middleware1';
-import { withMiddleware2 } from './middlewares/middleware2';
+import { chain } from '@/middlewares/chain';
+import { withAuthMiddleware } from '@/middlewares/withAuth';
+import { withI18nMiddleware } from '@/middlewares/withI18n';
 
-const middlewares = [withMiddleware1, withMiddleware2];
-export default chain(middlewares);
+export default chain([withAuthMiddleware, withI18nMiddleware]);
 
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
