@@ -1,25 +1,10 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { chain } from './middlewares/chain';
+import { withMiddleware1 } from './middlewares/middleware1';
+import { withMiddleware2 } from './middlewares/middleware2';
 
-async function middleware1(request: NextRequest) {
-  const url = request.url;
-  console.log('middleware1 => ', { url });
-
-  return NextResponse.next();
-}
-
-async function middleware2(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
-  console.log('middleware2 => ', { pathname });
-
-  return NextResponse.next();
-}
-
-export async function middleware(request: NextRequest) {
-  await middleware1(request);
-  await middleware2(request);
-}
+const middlewares = [withMiddleware1, withMiddleware2];
+export default chain(middlewares);
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)',],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
