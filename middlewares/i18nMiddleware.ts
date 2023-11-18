@@ -19,7 +19,7 @@ function getLocale(request: NextRequest): string | undefined {
   return locale;
 }
 
-export function withi18nMiddleware(middleware: CustomMiddleware) {
+export function i18nMiddleware(middleware: CustomMiddleware) {
   return async (
     request: NextRequest,
     event: NextFetchEvent,
