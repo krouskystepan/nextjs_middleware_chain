@@ -36,7 +36,6 @@ export function i18nMiddleware(middleware: CustomMiddleware) {
     if (pathnameIsMissingLocale) {
       const locale = getLocale(request);
 
-      console.log(locale);
       if (locale === i18n.defaultLocale) {
         return NextResponse.rewrite(
           new URL(
