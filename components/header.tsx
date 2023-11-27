@@ -20,6 +20,11 @@ export default async function Header({ lang }: { lang: Locale }) {
               {navigation.dashboard}
             </CustomLink>
           </li>
+          <li>
+            <CustomLink href={`/about`} lang={lang}>
+              {navigation.about}
+            </CustomLink>
+          </li>
         </ul>
         <LocaleSwitcher />
       </nav>

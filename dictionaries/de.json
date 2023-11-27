@@ -1,7 +1,8 @@
 {
   "navigation": {
     "home": "Startseite",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "about": "About"
   },
   "page": {
     "home": {
@@ -11,6 +12,10 @@
     "dashboard": {
       "title": "Dashboard-Seite",
       "description": "Dies ist die Benutzer-Dashboard-Seite."
+    },
+    "about": {
+      "title": "About-Seite",
+      "description": "Dies ist die Benutzer-About-Seite."
     }
   },
   "auth": {
