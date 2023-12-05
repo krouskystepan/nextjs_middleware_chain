@@ -11,11 +11,13 @@
     },
     "dashboard": {
       "title": "Dashboard-Seite",
-      "description": "Dies ist die Benutzer-Dashboard-Seite."
+      "description": "Dies ist die Benutzer-Dashboard-Seite.",
+      "description2": ""
     },
     "about": {
       "title": "About-Seite",
-      "description": "Dies ist die Benutzer-About-Seite."
+      "description": "Dies ist die Benutzer-About-Seite.",
+      "description2": ""
     }
   },
   "auth": {
