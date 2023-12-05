@@ -11,11 +11,13 @@
     },
     "dashboard": {
       "title": "Dashboard Page",
-      "description": "This is the dashboard page"
+      "description": "This is the dashboard page",
+      "description2": "This is protected page"
     },
     "about": {
       "title": "About us Page",
-      "description": "This is the about page"
+      "description": "This is the about page",
+      "description2": "This is unprotected page"
     }
   },
   "auth": {

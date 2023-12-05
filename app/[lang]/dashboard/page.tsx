@@ -20,6 +20,7 @@ export default async function Dashboard({
       <div className="container">
         <h1 className="text-3xl font-bold">{page.dashboard.title}</h1>
         <p className="text-gray-500">{page.dashboard.description}</p>
+        <p className="text-gray-500">{page.dashboard.description2}</p>
 
         <div className="mt-6">
           <pre className="mt-4">
